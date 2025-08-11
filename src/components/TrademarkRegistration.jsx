@@ -51,15 +51,25 @@ const TrademarkRegistration = () => {
         </div> */}
 
         <div>
-  <p className="text-lg font-semibold">
+          {/* <p className="text-lg font-semibold">
     Just pay only{" "}
     <span className="text-yellow-300 font-bold">₹1999*</span>
-  </p>
-  <p className="text-sm text-gray-100">
-    Avail <span className="font-bold">50% discount</span> on Govt fee
-    for Trademark Registration
-  </p>
-</div>
+  </p> */}
+          <div className="flex justify-center">
+            <p className="text-lg md:text-xl font-semibold flex items-center gap-2 mt-2">
+              Just pay only{" "}
+              <span className="bg-gradient-to-r from-blue-400 to-blue-600 text-black px-3 py-1 rounded-full font-extrabold shadow-md hover:scale-110 transition-transform duration-300">
+                ₹1999*
+              </span>
+            </p>
+          </div>
+
+
+          <p className="text-sm text-gray-100">
+            Avail <span className="font-bold">50% discount</span> on Govt fee
+            for Trademark Registration
+          </p>
+        </div>
 
 
         {/* Govt Fee Info */}
@@ -78,18 +88,8 @@ const TrademarkRegistration = () => {
   required documents, and our experts will handle the filing on your behalf, 
   ensuring a hassle-free and quick approval.
 </p> */}
-<p className="text-md sm:text-md md:text-md lg:text-md xl:text-lg font-lato text-gray-300">
-  For trademark registration, you need to pay Rs. 9000/- as Government fees. 
-  But if you own a MSME/SSI/Udyog Aadhar certificate, this Government fee is 
-  <span className="font-bold"> reduced to 50%</span>. 
-  Registering your trademark not only protects your brand from misuse but also 
-  gives you the exclusive rights to use it across India. 
-  The process is completely online — simply share your business details, 
-  required documents, and our experts will handle the filing on your behalf, 
-  ensuring a hassle-free and quick approval. 
-  Once registered, your brand name or logo is legally secured for 10 years, 
-  with easy renewal options, giving you long-term protection and peace of mind.
-</p>
+        <p className="text-md sm:text-md md:text-md lg:text-md xl:text-lg font-lato text-gray-300">
+          For trademark registration, you need to pay Rs. 9000/- as Government fees. But if you own a MSME/SSI/Udyog Aadhar certificate, this Government fee is reduced to 50%.</p>
 
 
 
@@ -98,10 +98,11 @@ const TrademarkRegistration = () => {
           Book Free Consultation
         </button> */}
         <Link to="/contact">
-  <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-5 py-2 mt-6 rounded-lg shadow-md transition inline-block">
-    Book Free Consultation
-  </button>
-</Link>
+          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 mt-6 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105 inline-block">
+            Book Free Consultation
+          </button>
+        </Link>
+
 
       </div>
     </section>
@@ -150,37 +151,37 @@ export default TrademarkRegistration;
 // export default TrademarkRegistration;
 
 // <div className="w-full max-w-6xl mx-auto py-6">
-    //   <Swiper
-    //     modules={[Navigation, Pagination, Autoplay]}
-    //     spaceBetween={20}
-    //     slidesPerView={1}
-    //     navigation
-    //     pagination={{ clickable: true }}
-    //     autoplay={{ delay: 3000 }}
-    //     className="!flex items-center justify-center"
-    //   >
-    //     {/* Trademark Registration */}
-    //     <SwiperSlide className="!flex justify-center items-center">
-    //       <div className="w-full max-w-5xl">
-    //         <TrademarkRegistration />
-    //       </div>
-    //     </SwiperSlide>
+//   <Swiper
+//     modules={[Navigation, Pagination, Autoplay]}
+//     spaceBetween={20}
+//     slidesPerView={1}
+//     navigation
+//     pagination={{ clickable: true }}
+//     autoplay={{ delay: 3000 }}
+//     className="!flex items-center justify-center"
+//   >
+//     {/* Trademark Registration */}
+//     <SwiperSlide className="!flex justify-center items-center">
+//       <div className="w-full max-w-5xl">
+//         <TrademarkRegistration />
+//       </div>
+//     </SwiperSlide>
 
-    //     {/* Income Tax Filing */}
-    //     <SwiperSlide className="!flex justify-center items-center">
-    //       <div className="w-full max-w-5xl">
-    //         <IncomeTaxFiling />
-    //       </div>
-    //     </SwiperSlide>
+//     {/* Income Tax Filing */}
+//     <SwiperSlide className="!flex justify-center items-center">
+//       <div className="w-full max-w-5xl">
+//         <IncomeTaxFiling />
+//       </div>
+//     </SwiperSlide>
 
-    //     {/* GST Registration */}
-    //     <SwiperSlide className="!flex justify-center items-center">
-    //       <div className="w-full max-w-5xl">
-    //         <GSTRegistration />
-    //       </div>
-    //     </SwiperSlide>
-    //   </Swiper>
-    // </div>
+//     {/* GST Registration */}
+//     <SwiperSlide className="!flex justify-center items-center">
+//       <div className="w-full max-w-5xl">
+//         <GSTRegistration />
+//       </div>
+//     </SwiperSlide>
+//   </Swiper>
+// </div>
 
 
 
