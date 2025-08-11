@@ -8,13 +8,28 @@ import { Link } from "react-router-dom";
 
 const TrademarkRegistration = () => {
   return (
-    <section
-      className="w-full bg-cover bg-center text-white relative px-6 py-12 rounded-lg overflow-hidden"
+    // <section
+    //   className="w-full bg-cover bg-center text-white relative px-6 py-12 rounded-lg overflow-hidden"
+    //   style={{
+    //     backgroundImage: `url(${backgroundImg})`,
+    //     fontFamily: "Roboto Slab, serif",
+    //   }}
+    // >
+      <section
+      className="w-full relative text-white px-6 py-12 rounded-lg overflow-hidden"
       style={{
-        backgroundImage: `url(${backgroundImg})`,
         fontFamily: "Roboto Slab, serif",
       }}
     >
+      {/* Background image with blur */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${backgroundImg})`,
+          filter: "blur(3px)",  // blur amount yahan control karo
+          zIndex: 0,
+        }}
+      ></div>
       {/* Overlay */}
       <div className="absolute inset-0 bg-blue-900/60 z-0" />
 
