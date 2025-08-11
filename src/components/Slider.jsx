@@ -58,37 +58,37 @@ import TrademarkRegistration from "./TrademarkRegistration";
 
 const Slider = () => {
   return (
-    
+    <div className="-[98%] mx-auto pt-4 pb-0 -mb-2">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        spaceBetween={10}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 3000 }}
+        style={{
+          "--swiper-pagination-bottom": "5px" // dots ke niche ka gap kam kiya
+        }}
+      >
+        <SwiperSlide className="!flex justify-center items-center">
+          <div className="w-full">
+            <TrademarkRegistration />
+          </div>
+        </SwiperSlide>
 
-    <div className="w-[98%] mx-auto py-4">
-  <Swiper
-    modules={[Navigation, Pagination, Autoplay]}
-    spaceBetween={10} // gap kam kar diya
-    slidesPerView={1}
-    navigation
-    pagination={{ clickable: true }}
-    autoplay={{ delay: 3000 }}
-  >
-    <SwiperSlide className="!flex justify-center items-center">
-      <div className="w-full">
-        <TrademarkRegistration />
-      </div>
-    </SwiperSlide>
+        <SwiperSlide className="!flex justify-center items-center">
+          <div className="w-full">
+            <IncomeTaxFiling />
+          </div>
+        </SwiperSlide>
 
-    <SwiperSlide className="!flex justify-center items-center">
-      <div className="w-full">
-        <IncomeTaxFiling />
-      </div>
-    </SwiperSlide>
-
-    <SwiperSlide className="!flex justify-center items-center">
-      <div className="w-full">
-        <GSTRegistration />
-      </div>
-    </SwiperSlide>
-  </Swiper>
-</div>
-
+        <SwiperSlide className="!flex justify-center items-center">
+          <div className="w-full">
+            <GSTRegistration />
+          </div>
+        </SwiperSlide>
+      </Swiper>
+    </div>
   );
 };
 

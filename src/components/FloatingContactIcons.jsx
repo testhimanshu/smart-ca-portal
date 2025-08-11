@@ -8,7 +8,7 @@ const FloatingContactIcons = () => {
       {/* Chat Now Button with Tooltip */}
       <div className="relative group">
       <a
-        href="https://wa.me/919468600867"  
+        href="https://wa.me/919990295002"  
         target="_blank"
         rel="noopener noreferrer"
         className="w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center shadow-lg hover:scale-110 hover:bg-green-600 hover:text-white transition-all duration-300"
@@ -23,7 +23,7 @@ const FloatingContactIcons = () => {
        {/* Call Now Button with Tooltip */}
       <div className="relative group">
       <a
-        href="tel:9468600867" 
+        href="tel:9990295002" 
         className="w-12 h-12 rounded-full bg-indigo-600 text-white flex items-center justify-center shadow-lg hover:scale-110 hover:bg-indigo-700 hover:text-white transition-all duration-300"
       >
         <FaPhoneAlt size={22} />

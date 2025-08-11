@@ -13,18 +13,21 @@ import Slider from "./Slider";
 const HeroSection = () => {
   return (
     <>
-
-      <div className="w-full flex flex-col gap-12">
+<div className="w-full flex flex-col gap-10">
   {/* Hero Section */}
   <FrontPageHeroDiv />
-  
+
   {/* Slider */}
-  <div className="w-full px-4 sm:px-6 md:px-8">
+  <div className="w-full px-4 sm:px-6 md:px-8 ">
     <Slider />
   </div>
+  
 
   {/* Step by step process */}
   <StepByStepJourney />
+</div>
+
+
 
   {/* Private limited registration Block */}
   <Deliverables />
@@ -34,7 +37,7 @@ const HeroSection = () => {
 
   {/* IT & Finance Consultancy */}
   <ITandFinanceConsultancy />
-</div>
+
 
     </>
   );

@@ -7,10 +7,10 @@ const Advertisement = () => {
     <div className="overflow-hidden whitespace-nowrap  text-white">
   <div className="flex animate-marquee">
     <p className="mx-8 tracking-wide text-sm sm:text-base' sm:text-lg font-sans">
-       Start Your Private Limited Company in Just 14 Days at ₹499/- Only! Fast, Affordable & Hassle-Free Business Registration with Legafin — Don't Wait, Book Now!  
+       Start Your Private Limited Company in Just 14 Days at ₹4999/- Only! Fast, Affordable & Hassle-Free Business Registration with Legafin — Don't Wait, Book Now!  
     </p>
     <p className="mx-8 tracking-wide text-sm sm:text-base' sm:text-lg font-sans">
-      Start Your Private Limited Company in Just 14 Days at ₹499/- Only! Fast, Affordable & Hassle-Free Business Registration with Legafin — Don't Wait, Book Now!  
+      Start Your Private Limited Company in Just 14 Days at ₹4999/- Only! Fast, Affordable & Hassle-Free Business Registration with Legafin — Don't Wait, Book Now!  
     </p>
   </div>
 </div>
