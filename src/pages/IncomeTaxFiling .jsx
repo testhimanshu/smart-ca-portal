@@ -22,7 +22,7 @@ const IncomeTaxFiling = () => {
         </h1>
 
         {/* Subheading */}
-        <p className="text-lg font-medium text-gray-100">
+        <p className="text-md sm:text-md md:text-md lg:text-md xl:text-lg font-lato text-gray-100">
           File Income Tax Return online from our expert assisted service — fast
           and hassle-free
         </p>
@@ -55,7 +55,7 @@ const IncomeTaxFiling = () => {
   Don’t wait until the deadline — complete your ITR filing smoothly with{" "}
   <span className="font-bold text-blue-200">Legafin</span> and stay worry-free.
 </p> */}
-<p className="text-sm md:text-base text-gray-200">
+<p className="text-md sm:text-md md:text-md lg:text-md xl:text-lg font-lato text-gray-200">
   The Income Tax Return filing due date is fast approaching. Start early to avoid last-minute congestion, server slowdowns, and submission errors. Filing in advance ensures accuracy, timely processing, and peace of mind. 
   With proper documentation and expert guidance, you can also maximize eligible deductions and claim refunds faster. 
   Early filing also helps you identify and correct any discrepancies in your records before it’s too late. 

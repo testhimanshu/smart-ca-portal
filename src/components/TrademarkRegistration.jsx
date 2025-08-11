@@ -33,7 +33,7 @@ const TrademarkRegistration = () => {
         </p>
 
         {/* Description */}
-        <p className="text-sm md:text-base text-gray-200">
+        <p className="text-md sm:text-md md:text-md lg:text-md xl:text-lg font-lato text-gray-200">
           No need to visit Trademark Register Office. Easy & quick process of
           online TM application by sitting at your place.
         </p>
@@ -78,7 +78,7 @@ const TrademarkRegistration = () => {
   required documents, and our experts will handle the filing on your behalf, 
   ensuring a hassle-free and quick approval.
 </p> */}
-<p className="text-xs md:text-sm text-gray-300">
+<p className="text-md sm:text-md md:text-md lg:text-md xl:text-lg font-lato text-gray-300">
   For trademark registration, you need to pay Rs. 9000/- as Government fees. 
   But if you own a MSME/SSI/Udyog Aadhar certificate, this Government fee is 
   <span className="font-bold"> reduced to 50%</span>. 

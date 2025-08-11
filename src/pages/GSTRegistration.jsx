@@ -25,7 +25,7 @@ const GSTRegistration = () => {
         </h1>
 
         {/* Subheading */}
-        <p className="text-lg font-medium text-gray-100">
+        <p className="text-md sm:text-md md:text-md lg:text-md xl:text-lg font-lato text-gray-100">
           Get Online Assistance from India’s recommended Business Taxation
           Experts in GST Registration to Filing the Mandatory GST Returns
           Annually
@@ -51,7 +51,7 @@ const GSTRegistration = () => {
           stress. We make the process simple, fast, and completely online so you
           can focus on growing your business.
         </p> */}
-        <p className="text-sm md:text-base text-gray-200">
+        <p className="text-md sm:text-md md:text-md lg:text-md xl:text-lg font-lato text-gray-200">
   From quick GST registration to annual return filing — Legafin makes compliance simple, fast, and fully online, so you can focus on growing your business.
 </p>
 
