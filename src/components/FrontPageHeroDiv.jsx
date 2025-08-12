@@ -34,25 +34,41 @@ const TEMPLATE_ID_1 = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_1;
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const FrontPageHeroDiv = () => {
-  const form = useRef();
-  const [isLoading, setIsLoading] = useState(false);
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setIsLoading(true); // Start loading immediately
-    toast.success("Thank you for contacting Legafin!"); // Show toast immediately
+  // const form = useRef();
+  // 🔹 CHANGE 1: Desktop aur Mobile ke liye alag-alag refs banaye
+  const formDesktop = useRef();
+  const formMobile = useRef();
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID_1, form.current, PUBLIC_KEY).then(
-      (result) => {
-        console.log(result.text);
-        e.target.reset();
-        setIsLoading(false); // Stop loading after success
-      },
-      (error) => {
-        console.log(error.text);
-        toast.error("Something went wrong. Please try again later.");
-        setIsLoading(false); // Stop loading after failure
-      }
-    );
+  // const [isLoading, setIsLoading] = useState(false);
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+  //   setIsLoading(true); 
+  //   toast.success("Thank you for contacting Legafin!"); 
+  const [isLoading, setIsLoading] = useState(false);
+
+  // 🔹 CHANGE 2: sendEmail me formType parameter add kiya
+  const sendEmail = (e, formType) => {
+    e.preventDefault();
+    setIsLoading(true);
+    toast.success("Thank you for contacting Legafin!");
+
+    // 🔹 CHANGE 3: Submit hua form select karna
+    const currentForm = formType === "desktop" ? formDesktop.current : formMobile.current;
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID_1, currentForm, PUBLIC_KEY)
+  .then(
+    (result) => {
+      console.log(result.text);
+      currentForm.reset(); // Sirf wahi form clear hoga jo submit hua
+      setIsLoading(false); // Stop loading after success
+    },
+    (error) => {
+      console.log(error.text);
+      toast.error("Something went wrong. Please try again later.");
+      setIsLoading(false); // Stop loading after failure
+    }
+  );
+
   };
   return (
     <>
@@ -142,7 +158,9 @@ const FrontPageHeroDiv = () => {
             <span className="text-blue-300 font-semibold">₹0.00</span> for
             Consultation
           </h2>
-          <form ref={form} onSubmit={sendEmail} className="space-y-4">
+          {/* <form ref={form} onSubmit={sendEmail} className="space-y-4"> */}
+          <form ref={formDesktop} onSubmit={(e) => sendEmail(e, "desktop")} className="space-y-4">
+
             <input
               type="text"
               name="full_name"
@@ -222,7 +240,8 @@ const FrontPageHeroDiv = () => {
     <span className="line-through text-red-500 font-semibold">₹99</span>{" "}
     <span className="text-blue-600 font-semibold">₹0.00</span> for Consultation
   </h2>
-  <form ref={form} onSubmit={sendEmail} className="space-y-4">
+  {/* <form ref={form} onSubmit={sendEmail} className="space-y-4"> */}
+  <form ref={formMobile} onSubmit={(e) => sendEmail(e, "mobile")} className="space-y-4">
     <input
       type="text"
       name="full_name"
