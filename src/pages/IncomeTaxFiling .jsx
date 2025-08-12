@@ -100,7 +100,7 @@ const IncomeTaxFiling = () => {
         <p className="text-md sm:text-md md:text-md lg:text-md xl:text-lg font-lato text-gray-200">
   The Income Tax Return filing due date is fast approaching. Start early to avoid last-minute congestion, server slowdowns, and submission errors. Filing in advance ensures accuracy, timely processing, and peace of mind. Don’t wait until the deadline—complete your ITR filing smoothly with legafin.
   <br />
-  <span className="font-semibold">Get expert help today and maximize your returns!</span>
+  {/* <span className="font-semibold">Get expert help today and maximize your returns!</span> */}
 </p>
 
 
