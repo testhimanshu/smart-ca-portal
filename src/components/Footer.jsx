@@ -132,13 +132,13 @@ const Footer = () => {
           </div>
           <div className="flex gap-3 mt-4">
             <a
-              href="tel:+919468600867"
+              href="tel:+919990295002"
               className="flex-1 flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-sm py-1 px-2 rounded-md transition shadow-sm"
             >
               Call Now!
             </a>
             <a
-              href="https://wa.me/919468600867"
+              href="https://wa.me/919990295002"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 flex items-center text-center justify-center bg-green-500 hover:bg-green-600 text-white font-medium text-sm py-1 px-2 rounded-md transition shadow-sm"
