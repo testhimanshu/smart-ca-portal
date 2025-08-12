@@ -232,7 +232,7 @@ export default function TermsAndConditions() {
 
 
           {/* Section 6 */}
-          <div id="privacy" ref={privacyRef} className="relative -mt-24 pt-24" >
+          <div id="privacy" ref={privacyRef} className="relative -mt-24 pt-24  " >
             <h2 className="text-lg font-semibold mt-8 mb-3 text-blue-900">
               Privacy Policy
             </h2>
@@ -256,8 +256,9 @@ export default function TermsAndConditions() {
             <p className="mb-2 text-gray-700 leading-relaxed pl-10 pr-10">
               What we collect: We may collect the following information
             </p>
+            <div className=" pl-12 pr-12" >
 
-            <ul className="list-disc pl-6 space-y-2 text-gray-700 leading-relaxed pl-12 pr-12">
+            <ul className="list-disc  space-y-2 text-gray-700 leading-relaxed">
               <li>Name and Job title</li>
               <li>Contact Information including email address & phone number</li>
               <li>
@@ -269,6 +270,7 @@ export default function TermsAndConditions() {
                 and/or offers
               </li>
             </ul>
+            </div>
 
             {/* Section 7 */}
             <h2 className="text-lg font-semibold mt-8 mb-3 text-blue-900">
@@ -278,7 +280,7 @@ export default function TermsAndConditions() {
               We require this information to understand your needs and provide you
               with a best service, and in particular for the following reasons:
             </p>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700 leading-relaxed pl-12 pr-12">
+            <ul className="list-disc  space-y-2 text-gray-700 leading-relaxed pl-12 pr-12">
               <li>Internal record keeping.</li>
               <li>
                 We may use the information to improve our products and services.
@@ -409,7 +411,7 @@ export default function TermsAndConditions() {
               You may choose to restrict the collection or use of your personal
               information in the following ways:
             </p>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700 leading-relaxed pl-10 pr-10">
+            <ul className="list-disc  space-y-2 text-gray-700 leading-relaxed pl-12 pr-12">
               <li>
                 Whenever you are asked to fill in a form on the website, look for
                 the box that you can click to indicate that you do not want the
@@ -425,7 +427,7 @@ export default function TermsAndConditions() {
                 writing to or emailing us at contact@Legafin.org
               </li>
             </ul>
-            <p className="mb-4  mt-2 text-gray-700 leading-relaxed pl-10 pr-10">
+            <p className="mb-4  mt-2 text-gray-700 leading-relaxed pl-12 pr-12">
               We will not sell, distribute or lease your personal information to
               third parties unless we have your permission or are required by law to
               do so. We may use your personal information to send you promotional
@@ -435,7 +437,7 @@ export default function TermsAndConditions() {
 
             {/* Section 13 */}
 
-            <p className="mb-2 text-gray-700 leading-relaxed pl-10 pr-10">
+            <p className="mb-2 text-gray-700 leading-relaxed pl-12 pr-12">
               If there are any questions regarding this privacy policy you may
               contact us using the information below:
             </p>
