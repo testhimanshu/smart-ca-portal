@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/Legafin-logo.png";
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 
@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="font-lato bg-gray-50 text-white pt-12 pb-8 px-4 md:px-8 shadow-inner">
       <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {/* Company Info */}
-        <div className="flex flex-col items-center">
+        {/* <div className="flex flex-col items-center">
           <h1 className="text-3xl font-serif font-extrabold text-blue-900 tracking-wide drop-shadow mb-3">
             Legafin
           </h1>
@@ -22,7 +22,18 @@ const Footer = () => {
             alt="Legafin Logo"
             className="h-20 w-22 object-contain"
           />
-        </div>
+        </div> */}
+        <div className="flex flex-col items-center">
+  <img
+    src={logo}
+    alt="Legafin Logo"
+    className="h-26 w-24 object-contain drop-shadow-lg mb-3"
+  />
+  <h1 className="text-2xl font-serif font-extrabold text-blue-900 tracking-wide drop-shadow-sm">
+    Legafin
+  </h1>
+</div>
+
 
         {/* Quick Links */}
         <div className="ml-2 md:ml-6 font-serif">

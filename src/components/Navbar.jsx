@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import ServicesDropdown from "./ServicesDropdown";
 import AdvertisementLine from "./AdvertisementLine";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import logo from "@/assets/Legafin-logo.png";
 
 const EMAIL = "contact@legafin.org";
 const EMAIL_HREF = "mailto:contact@legafin.org";
@@ -44,15 +45,35 @@ function Navbar() {
     "relative group text-blue-800 transition-all duration-300 font-serif cursor-pointer transform hover:scale-105";
 
   return (
-    <nav className="fixed top-0 w-full bg-white backdrop-blur-md shadow-md z-50">
-      <div className="w-full mx-auto px-5">
-        <div className="flex items-center justify-between py-4">
-          <div
+    // <nav className="fixed top-0 w-full bg-white backdrop-blur-md shadow-md z-50">
+    //   <div className="w-full mx-auto px-5">
+    //     <div className="flex items-center justify-between py-4">
+    //       <div
+    //         onClick={() => handleNavClick("/")}
+    //         className="text-2xl font-extrabold text-[#6659B8] cursor-pointer hover:text-blue-700 transition-colors duration-300 transform hover:scale-105"
+    //       >
+            
+    //         LEGAFIN
+    //       </div>
+     <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b shadow-sm">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="h-16 flex items-center justify-between">
+          {/* Brand */}
+          <button
             onClick={() => handleNavClick("/")}
-            className="text-2xl font-extrabold text-[#6659B8] cursor-pointer hover:text-blue-700 transition-colors duration-300 transform hover:scale-105"
+            className="group inline-flex items-center gap-2 cursor-pointer select-none"
+            aria-label="Go to home"
+            type="button"
           >
-            LEGAFIN
-          </div>
+            <img
+              src={logo}
+              alt="Legafin logo"
+              className="h-8 w-8 object-contain rounded-sm shrink-0"
+            />
+            <span className="text-xl md:text-2xl font-extrabold tracking-wide text-[#6659B8] transition-colors group-hover:text-blue-700">
+              LEGAFIN
+            </span>
+          </button>
 
           {/* Mobile Toggle */}
           <button
