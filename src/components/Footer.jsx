@@ -12,27 +12,40 @@ const Footer = () => {
   return (
     <footer className="font-lato bg-gray-50 text-white pt-12 pb-8 px-4 md:px-8 shadow-inner">
       <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {/* Company Info */}
-        {/* <div className="flex flex-col items-center">
-          <h1 className="text-3xl font-serif font-extrabold text-blue-900 tracking-wide drop-shadow mb-3">
-            Legafin
-          </h1>
-          <img
-            src={logo}
-            alt="Legafin Logo"
-            className="h-20 w-22 object-contain"
-          />
-        </div> */}
-        <div className="flex flex-col items-center">
-  <img
-    src={logo}
-    alt="Legafin Logo"
-    className="h-26 w-24 object-contain drop-shadow-lg mb-3"
-  />
-  <h1 className="text-2xl font-serif font-extrabold text-blue-900 tracking-wide drop-shadow-sm">
+ 
+  {/* <div className="flex flex-col items-center text-center ">
+  
+  <div className="w-28 h-28 md:w-32 md:h-32 flex items-center justify-center">
+    <img
+      src={logo}
+      alt="Legafin Logo"
+      className="w-full h-full object-contain drop-shadow-lg transition-transform duration-300"
+    />
+  </div>
+
+
+  <h1 className="mt-3 text-2xl md:text-3xl font-serif font-extrabold text-blue-900 tracking-wide drop-shadow-sm">
     Legafin
   </h1>
-</div>
+</div> */}
+ <div className="flex flex-col items-center text-center">
+  
+  <div className="w-28 h-28 md:w-32 md:h-32 flex items-center justify-center mt-4">
+    <img
+      src={logo}
+      alt="Legafin Logo"
+      className="w-full h-full object-contain drop-shadow-lg transition-transform duration-300"
+    />
+  </div>
+
+  
+  <h1 className="mt-3 text-2xl md:text-3xl font-serif font-extrabold text-blue-900 tracking-wide drop-shadow-sm">
+    Legafin
+  </h1>
+</div> 
+
+
+
 
 
         {/* Quick Links */}
@@ -141,7 +154,7 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <div className="flex gap-3 mt-4">
+          {/* <div className="flex gap-3 mt-4">
             <a
               href="tel:+919990295002"
               className="flex-1 flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-sm py-1 px-2 rounded-md transition shadow-sm"
@@ -156,7 +169,24 @@ const Footer = () => {
             >
               WhatsApp Now!
             </a>
-          </div>
+          </div> */}
+          <div className="flex gap-3 mt-4">
+  <a
+    href="tel:+919990295002"
+    className="flex-1 flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-sm py-2 px-2 rounded-md transition shadow-sm"
+  >
+    Call Now!
+  </a>
+  <a
+    href="https://wa.me/919990295002"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1 flex items-center text-center justify-center bg-green-500 hover:bg-green-600 text-white font-medium text-sm py-2 px-2 rounded-md transition shadow-sm"
+  >
+    WhatsApp Now!
+  </a>
+</div>
+
         </div>
       </div>
 
