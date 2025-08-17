@@ -47,17 +47,21 @@ function Navbar() {
   return (
     // <nav className="fixed top-0 w-full bg-white backdrop-blur-md shadow-md z-50">
     //   <div className="w-full mx-auto px-5">
-    //     <div className="flex items-center justify-between py-4">
+    //     {/* <div className="h-16 flex items-center justify-between"> */}
     //       <div
     //         onClick={() => handleNavClick("/")}
     //         className="text-2xl font-extrabold text-[#6659B8] cursor-pointer hover:text-blue-700 transition-colors duration-300 transform hover:scale-105"
     //       >
-            
+
     //         LEGAFIN
     //       </div>
-     <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b shadow-sm">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="h-16 flex items-center justify-between">
+
+    //  
+    <nav className="fixed top-0 w-full bg-white backdrop-blur-md shadow-md z-50">
+      <div className="w-full mx-auto px-5">
+
+
+        <div className="flex items-center justify-between py-4">
           {/* Brand */}
           <button
             onClick={() => handleNavClick("/")}
@@ -85,70 +89,69 @@ function Navbar() {
           </button>
 
           {/* Desktop Menu */}
-              <ul className="hidden lg:flex items-center space-x-8 font-medium">
-        <li>
-          <div onClick={() => handleNavClick("/")} className={`${linkClass} group`}>
-            Home
-            <span className="block h-[2px] w-0 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
-          </div>
-        </li>
+          <ul className="hidden lg:flex items-center space-x-8 font-medium">
+            <li>
+              <div onClick={() => handleNavClick("/")} className={`${linkClass} group`}>
+                Home
+                <span className="block h-[2px] w-0 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
+              </div>
+            </li>
 
-        <li>
-          <div onClick={() => handleNavClick("/about")} className={`${linkClass} group`}>
-            About
-            <span className="block h-[2px] w-0 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
-          </div>
-        </li>
+            <li>
+              <div onClick={() => handleNavClick("/about")} className={`${linkClass} group`}>
+                About
+                <span className="block h-[2px] w-0 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
+              </div>
+            </li>
 
-       <li
-  onMouseEnter={() => handleHover(true)}
-  onMouseLeave={() => handleHover(false)}
-  className="relative group font-serif cursor-pointer"
->
-  <div
-    onClick={toggleDropdown}
-    className={`${linkClass} flex items-center gap-1`}
-  >
-    All Services
-    <MdKeyboardArrowDown
-      className={`mt-[2px] transform transition-transform duration-300 ${
-        dropdownOpen ? "rotate-180" : "rotate-0"
-      }`}
-    />
-    <span className="block h-[2px] w-0 bg-blue-700 group-hover:w-full absolute bottom-0 left-0 transition-all duration-300"></span>
-  </div>
-         
-          {dropdownOpen && (
-            <div className="absolute left-1/2 top-full -translate-x-1/2 mt-4 w-[950px] bg-white border border-blue-200 rounded-2xl shadow-2xl z-50 animate-fadeIn">
-              <ServicesDropdown setDropdownOpen={setDropdownOpen} />
-            </div>
-          )}
-        </li>
+            <li
+              onMouseEnter={() => handleHover(true)}
+              onMouseLeave={() => handleHover(false)}
+              className="relative group font-serif cursor-pointer"
+            >
+              <div
+                onClick={toggleDropdown}
+                className={`${linkClass} flex items-center gap-1`}
+              >
+                All Services
+                <MdKeyboardArrowDown
+                  className={`mt-[2px] transform transition-transform duration-300 ${dropdownOpen ? "rotate-180" : "rotate-0"
+                    }`}
+                />
+                <span className="block h-[2px] w-0 bg-blue-700 group-hover:w-full absolute bottom-0 left-0 transition-all duration-300"></span>
+              </div>
 
-        <li>
-          <div onClick={() => handleNavClick("/career")} className={`${linkClass} group`}>
-            Careers
-            <span className="block h-[2px] w-0 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
-          </div>
-        </li>
+              {dropdownOpen && (
+                <div className="absolute left-1/2 top-full -translate-x-1/2 mt-4 w-[950px] bg-white border border-blue-200 rounded-2xl shadow-2xl z-50 animate-fadeIn">
+                  <ServicesDropdown setDropdownOpen={setDropdownOpen} />
+                </div>
+              )}
+            </li>
 
-        <li>
-          <div onClick={() => handleNavClick("/contact")} className={`${linkClass} group`}>
-            Contact
-            <span className="block h-[2px] w-0 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
-          </div>
-        </li>
+            <li>
+              <div onClick={() => handleNavClick("/career")} className={`${linkClass} group`}>
+                Careers
+                <span className="block h-[2px] w-0 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
+              </div>
+            </li>
 
-        <li>
-          <a
-            href={EMAIL_HREF}
-            onClick={closeMenu}
-            className="bg-[#6659B8] px-4 py-2 rounded-full flex items-center gap-2 font-sans shadow-md text-white"
-          >
-            📧 {EMAIL}
-          </a>
-        </li>
-      </ul>
+            <li>
+              <div onClick={() => handleNavClick("/contact")} className={`${linkClass} group`}>
+                Contact
+                <span className="block h-[2px] w-0 bg-blue-700 group-hover:w-full transition-all duration-300"></span>
+              </div>
+            </li>
+
+            <li>
+              <a
+                href={EMAIL_HREF}
+                onClick={closeMenu}
+                className="bg-[#6659B8] px-4 py-2 rounded-full flex items-center gap-2 font-sans shadow-md text-white"
+              >
+                📧 {EMAIL}
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 

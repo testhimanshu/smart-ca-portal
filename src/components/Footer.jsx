@@ -16,11 +16,18 @@ const Footer = () => {
         <div className="flex flex-col items-center text-center">
 
           <div className="w-28 h-28 md:w-32 md:h-32 flex items-center justify-center mt-4">
-            <img
+            {/* <img
               src={logo}
               alt="Legafin Logo"
               className="w-full h-full object-contain drop-shadow-lg transition-transform duration-300"
-            />
+            /> */}
+  <img
+  src={logo}
+  alt="Legafin Logo"
+  className="w-full h-full object-contain drop-shadow-lg transition-transform duration-300 rounded-md"
+/>
+
+
           </div>
 
 
