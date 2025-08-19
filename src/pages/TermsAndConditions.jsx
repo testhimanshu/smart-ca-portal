@@ -442,15 +442,15 @@ export default function TermsAndConditions() {
               contact us using the information below:
             </p>
             <h3 className="text-2xl mb-3 mt-3 font-bold text-blue-900">
-              Our Corporate Office
+              Contact Us
             </h3>
             <ul className="space-y-3 text-gray-700 text-[1rem] leading-relaxed">
               <li className="flex items-start gap-5">
-                <FaMapMarkerAlt className="text-blue-800 mt-1" />
+                {/* <FaMapMarkerAlt className="text-blue-800 mt-1" />
                 <span className="text-gray-500">
                   D3, 29, 2nd Floor, DDA Golf Link, Dwarka Sec 23B Delhi
                   110077
-                </span>
+                </span> */}
               </li>
               <li className="flex items-start gap-5">
                 <FaPhoneAlt className="text-blue-800 mt-1" />
